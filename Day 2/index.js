@@ -43,3 +43,11 @@ let num1 = 15;
 let resutlt = num != num1;
 
 console.log("Example of ||  operator", resutlt); // True
+
+// --------------------------------Activity 5 ---------------Ternary Operator - 
+
+let numberValue = 7;
+
+let resultNumber = (numberValue > 0) ?"Positive" : "Negative"
+
+console.log(`The number ${numberValue} is "${resultNumber}" `)
