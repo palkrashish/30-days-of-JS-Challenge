@@ -15,9 +15,15 @@ let val1 = 2;
 // val += val1
 // console.log('Addition of two number:', val) // 8
 
-val -= val1;
+// val -= val1;
 console.log("Subtracction of two number:", val); // 4
 
 // --------------------------Acitivity 3 - Comparision Operator------------
 
 console.log(`Greater then Val: "${val}" to Val1: "${val1}" `, val > val1);
+console.log(`Less then Val: "${val}" to Val1: "${val1}" `, val < val1);
+console.log(`Less then or equal to Val: "${val}" to Val1: "${val1}" `, val <= val1);
+console.log(`Greater then or equal to Val: "${val}" to Val1: "${val1}" `, val >= val1);
+console.log(`Compare to Val: "${val}" to Val1: "${val1}" `, val == val1);
+console.log(`Strict type checking to Val: "${val}" to Val1: "${val1}" `, val === val1);
+
