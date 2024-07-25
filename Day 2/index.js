@@ -16,14 +16,30 @@ let val1 = 2;
 // console.log('Addition of two number:', val) // 8
 
 // val -= val1;
-console.log("Subtracction of two number:", val); // 4
+// console.log("Subtracction of two number:", val); // 4
 
 // --------------------------Acitivity 3 - Comparision Operator------------
 
-console.log(`Greater then Val: "${val}" to Val1: "${val1}" `, val > val1);
-console.log(`Less then Val: "${val}" to Val1: "${val1}" `, val < val1);
-console.log(`Less then or equal to Val: "${val}" to Val1: "${val1}" `, val <= val1);
-console.log(`Greater then or equal to Val: "${val}" to Val1: "${val1}" `, val >= val1);
-console.log(`Compare to Val: "${val}" to Val1: "${val1}" `, val == val1);
-console.log(`Strict type checking to Val: "${val}" to Val1: "${val1}" `, val === val1);
+// console.log(`Greater then Val: "${val}" to Val1: "${val1}" `, val > val1);
+// console.log(`Less then Val: "${val}" to Val1: "${val1}" `, val < val1);
+// console.log(`Less then or equal to Val: "${val}" to Val1: "${val1}" `, val <= val1);
+// console.log(`Greater then or equal to Val: "${val}" to Val1: "${val1}" `, val >= val1);
+// console.log(`Compare to Val: "${val}" to Val1: "${val1}" `, val == val1);
+// console.log(`Strict type checking to Val: "${val}" to Val1: "${val1}" `, val === val1);
 
+// ------------------------------Activity 4 Logical Operator -------------------
+
+let number = true;
+let number1 = false;
+// let resutlt = number && number1;
+// console.log("Example of &&  operator", resutlt); // false
+
+// let resutlt = number || number1;
+
+// console.log("Example of ||  operator", resutlt); // True
+
+let num = 5;
+let num1 = 15;
+let resutlt = num != num1;
+
+console.log("Example of ||  operator", resutlt); // True
