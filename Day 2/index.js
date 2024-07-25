@@ -9,12 +9,15 @@
 
 // ----------------------------------------------- Activity 2 -----------------------------
 
-let val = 6
-let val1 = 2
+let val = 6;
+let val1 = 2;
 
 // val += val1
 // console.log('Addition of two number:', val) // 8
 
-val-= val1
-console.log('Subtracction of two number:', val) // 4
+val -= val1;
+console.log("Subtracction of two number:", val); // 4
 
+// --------------------------Acitivity 3 - Comparision Operator------------
+
+console.log(`Greater then Val: "${val}" to Val1: "${val1}" `, val > val1);
