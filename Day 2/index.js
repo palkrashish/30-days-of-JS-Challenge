@@ -12,5 +12,9 @@
 let val = 6
 let val1 = 2
 
-val += val1
-console.log('Addition of two number:', val) // 8
+// val += val1
+// console.log('Addition of two number:', val) // 8
+
+val-= val1
+console.log('Subtracction of two number:', val) // 4
+
