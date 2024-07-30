@@ -113,10 +113,29 @@
 
 // Task 6
 
-function checkIsOdd(number) {
-  let result = number % 2 === 0 ? "Even" : "Odd";
-  return result;
+// function checkIsOdd(number) {
+//   let result = number % 2 === 0 ? "Even" : "Odd";
+//   return result;
+// }
+// let number = 2024;
+// let resultNumber = checkIsOdd(number);
+// console.log(`Number ${number} is "${resultNumber}" `);
+
+// Task 7
+// Task 7
+
+function isLeapYear({ year: number }) {
+  if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
-let number = 2024;
-let resultNumber = checkIsOdd(number);
-console.log(`Number ${number} is "${resultNumber}" `);
+
+let year = 2021;
+
+if (isLeapYear({ year })) {
+  console.log(`${year} is a leap year.`);
+} else {
+  console.log(`${year} is not a leap year.`);
+}
