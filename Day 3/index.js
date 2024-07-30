@@ -76,40 +76,47 @@
 
 // console.log(`Day ${dayNumber} is ${dayName}.`);
 
-
-
 // Task 5
 
-function getGrade(score) {
-   let grade;
+// function getGrade(score) {
+//    let grade;
 
-   switch (true) {
-       case (score >= 90 && score <= 100):
-           grade = 'A';
-           break;
-       case (score >= 80 && score < 90):
-           grade = 'B';
-           break;
-       case (score >= 70 && score < 80):
-           grade = 'C';
-           break;
-       case (score >= 60 && score < 70):
-           grade = 'D';
-           break;
-       case (score >= 0 && score < 60):
-           grade = 'E';
-           break;
-       default:
-           grade = 'Invalid score. Please enter a score between 0 and 100.';
-           break;
-   }
+//    switch (true) {
+//        case (score >= 90 && score <= 100):
+//            grade = 'A';
+//            break;
+//        case (score >= 80 && score < 90):
+//            grade = 'B';
+//            break;
+//        case (score >= 70 && score < 80):
+//            grade = 'C';
+//            break;
+//        case (score >= 60 && score < 70):
+//            grade = 'D';
+//            break;
+//        case (score >= 0 && score < 60):
+//            grade = 'E';
+//            break;
+//        default:
+//            grade = 'Invalid score. Please enter a score between 0 and 100.';
+//            break;
+//    }
 
-   return grade;
+//    return grade;
+// }
+
+// let score = 74;
+
+// let grade = getGrade(score);
+
+// console.log(`A score of ${score}, the grade assigned is ${grade}.`);
+
+// Task 6
+
+function checkIsOdd(number) {
+  let result = number % 2 === 0 ? "Even" : "Odd";
+  return result;
 }
-
-let score = 74; 
-
-let grade = getGrade(score);
-
-console.log(`A score of ${score}, the grade assigned is ${grade}.`);
-
+let number = 2024;
+let resultNumber = checkIsOdd(number);
+console.log(`Number ${number} is "${resultNumber}" `);
