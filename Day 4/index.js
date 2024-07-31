@@ -36,9 +36,32 @@
 
 // Task 5
 
-let num = 1;
-console.log(`Print the number from 1 to 5: -`)
-do {
-  console.log(`${num}`);
-  num++;
-} while (num <= 5);
+// let num = 1;
+// console.log(`Print the number from 1 to 5: -`)
+// do {
+//   console.log(`${num}`);
+//   num++;
+// } while (num <= 5);
+
+
+// Task 6 
+
+function factorial(num) {
+  let result = 1;
+  let i = 1;
+
+  // Check if num is non-negative
+  if (num < 0) {
+      return "Factorial is not defined for negative numbers";
+  }
+
+  do {
+      result *= i;
+      i++;
+  } while (i <= num);
+
+  return result;
+}
+
+const number = 5;
+console.log(`The factorial of ${number} is:`, factorial(number));
