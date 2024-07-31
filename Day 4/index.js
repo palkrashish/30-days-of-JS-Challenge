@@ -43,25 +43,42 @@
 //   num++;
 // } while (num <= 5);
 
+// Task 6
 
-// Task 6 
+// function factorial(num) {
+//   let result = 1;
+//   let i = 1;
 
-function factorial(num) {
-  let result = 1;
-  let i = 1;
+//   // Check if num is non-negative
+//   if (num < 0) {
+//       return "Factorial is not defined for negative numbers";
+//   }
 
-  // Check if num is non-negative
-  if (num < 0) {
-      return "Factorial is not defined for negative numbers";
+//   do {
+//       result *= i;
+//       i++;
+//   } while (i <= num);
+
+//   return result;
+// }
+
+// const number = 5;
+// console.log(`The factorial of ${number} is:`, factorial(number));
+
+// // Task 7
+
+// for (let outer = 0; outer < 5; outer++) {
+//   for (let inner = 0; inner <= outer; outer++) {
+//     console.log("*");
+//   }
+// }
+
+
+// Task 8 
+
+for (let i = 1; i <= 10; i++) {
+  if (i === 5) {
+      continue; 
   }
-
-  do {
-      result *= i;
-      i++;
-  } while (i <= num);
-
-  return result;
+  console.log(i);
 }
-
-const number = 5;
-console.log(`The factorial of ${number} is:`, factorial(number));
