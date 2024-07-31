@@ -67,27 +67,30 @@
 
 // // Task 7
 
-// for (let outer = 0; outer < 5; outer++) {
-//   for (let inner = 0; inner <= outer; outer++) {
-//     console.log("*");
-//   }
-// }
+let n = 5;
+let string = "";
+for (let i = 1; i <= n; i++) {
+  for (let j = 0; j < i; j++) {
+    string += "*";
+  }
+  string += "\n";
+}
+console.log(string);
 
-
-// // Task 8 
+// // Task 8
 
 // for (let i = 1; i <= 10; i++) {
 //   if (i === 5) {
-//       continue; 
+//       continue;
 //   }
 //   console.log(i);
 // }
 
 // Task 9
 
-for (let i = 1; i <= 10; i++) {
-  if (i === 7) {
-      break; 
-  }
-  console.log(i);
-}
+// for (let i = 1; i <= 10; i++) {
+//   if (i === 7) {
+//       break;
+//   }
+//   console.log(i);
+// }
