@@ -27,9 +27,18 @@
 
 // Task 4
 
-console.log("Print the number from 10 to 1: -");
-let num = 10;
-while (num >= 1) {
-  console.log(` ${num}`);
-  num = num - 1;
-}
+// console.log("Print the number from 10 to 1: -");
+// let num = 10;
+// while (num >= 1) {
+//   console.log(` ${num}`);
+//   num = num - 1;
+// }
+
+// Task 5
+
+let num = 1;
+console.log(`Print the number from 1 to 5: -`)
+do {
+  console.log(`${num}`);
+  num++;
+} while (num <= 5);
