@@ -46,6 +46,6 @@
 
 // Task 6
 
-const containsCharacter = (str, char) => str.includes(char);
-let result = containsCharacter("Hello, world!", "o");
-console.log(result);
+const strContains = (str, char) => str.includes(char);
+let result = strContains("Ashish, Pal!", "S");
+console.log(result); // False
