@@ -46,6 +46,13 @@
 
 // Task 6
 
-const strContains = (str, char) => str.includes(char);
-let result = strContains("Ashish, Pal!", "S");
-console.log(result); // False
+// const strContains = (str, char) => str.includes(char);
+// let result = strContains("Ashish, Pal!", "S");
+// console.log(result); // False
+
+// Task 7
+function produceValue(num1, num2 = 2) {
+  return num1 * num2;
+}
+let result = produceValue(5);
+console.log(`Result of Product value ${result}`);
