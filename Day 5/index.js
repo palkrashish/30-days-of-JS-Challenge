@@ -67,35 +67,59 @@
 
 // Task 9
 
-function callFunctionNTimes(func, n) {
-  for (let i = 0; i < n; i++) {
-    func();
-  }
-}
+// function callFunctionNTimes(func, n) {
+//   for (let i = 0; i < n; i++) {
+//     func();
+//   }
+// }
 
-function greet() {
-  console.log("Hello, world!");
-}
+// function greet() {
+//   console.log("Hello, world!");
+// }
 
-callFunctionNTimes(greet, 3);
+// callFunctionNTimes(greet, 3);
 // Output:
 // Hello, world!
 // Hello, world!
 // Hello, world!
 
-function countAndLog() {
-  let count = 0;
-  return function () {
-    count++;
-    console.log(`Function called ${count} times.`);
-  };
-}
+// function countAndLog() {
+//   let count = 0;
+//   return function () {
+//     count++;
+//     console.log(`Function called ${count} times.`);
+//   };
+// }
 
-const counterFunc = countAndLog();
-callFunctionNTimes(counterFunc, 5);
+// const counterFunc = countAndLog();
+// callFunctionNTimes(counterFunc, 5);
 // Output:
 // Function called 1 times.
 // Function called 2 times.
 // Function called 3 times.
 // Function called 4 times.
 // Function called 5 times.
+
+// Task 10
+function composeFunctions(func1, func2, value) {
+  const resultFromFunc1 = func1(value);
+  const finalResult = func2(resultFromFunc1);
+  return finalResult;
+}
+// Example functions
+function double(x) {
+  return x * 2;
+}
+
+function addFive(x) {
+  return x + 5;
+}
+
+// Using composeFunctions
+let result = composeFunctions(double, addFive, 3);
+console.log(result); // Output: 11
+// Explanation: addFive(double(3)) = addFive(6) = 11
+
+result = composeFunctions(addFive, double, 4);
+console.log(result); // Output: 13
+// Explanation: double(addFive(4)) = double(9) = 13
