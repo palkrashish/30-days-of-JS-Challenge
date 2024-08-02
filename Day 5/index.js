@@ -59,8 +59,43 @@
 
 // Task 8
 
-function greetingMsg(name, age = 19){
-    return console.log(`Welcome ${name} and your age is ${age}, hope youa are doing well `)
+// function greetingMsg(name, age = 19){
+//     return console.log(`Welcome ${name} and your age is ${age}, hope youa are doing well `)
+// }
+
+// greetingMsg('ashish')
+
+// Task 9
+
+function callFunctionNTimes(func, n) {
+  for (let i = 0; i < n; i++) {
+    func();
+  }
 }
 
-greetingMsg('ashish')
+function greet() {
+  console.log("Hello, world!");
+}
+
+callFunctionNTimes(greet, 3);
+// Output:
+// Hello, world!
+// Hello, world!
+// Hello, world!
+
+function countAndLog() {
+  let count = 0;
+  return function () {
+    count++;
+    console.log(`Function called ${count} times.`);
+  };
+}
+
+const counterFunc = countAndLog();
+callFunctionNTimes(counterFunc, 5);
+// Output:
+// Function called 1 times.
+// Function called 2 times.
+// Function called 3 times.
+// Function called 4 times.
+// Function called 5 times.
