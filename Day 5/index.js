@@ -30,8 +30,17 @@
 
 //Task 4
 
-function conString(str,str1){
-console.log(`Concatenating of two string: ${str} ${str1}`)
-}
+// function conString(str,str1){
+// console.log(`Concatenating of two string: ${str} ${str1}`)
+// }
 
-conString('Ashish', 'Pal')
+// conString('Ashish', 'Pal')
+
+// Task 5
+
+const calculateSum = (num1, num2) => num1 + num2;
+
+
+let result = calculateSum(3, 4);
+
+console.log(`Sum of two number ${result}`); 
