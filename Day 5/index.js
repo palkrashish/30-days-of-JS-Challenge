@@ -18,12 +18,20 @@
 // console.log(`Square  of  number is: ${result} `);
 
 // Task 3
-function gratestNumber(num, num1) {
-  if (num >= num1) {
-    console.log(`${num} is greater than ${num1}.`);
-  } else {
-    console.log(`${num1} is greater than ${num}.`);
-  }
+// function gratestNumber(num, num1) {
+//   if (num >= num1) {
+//     console.log(`${num} is greater than ${num1}.`);
+//   } else {
+//     console.log(`${num1} is greater than ${num}.`);
+//   }
+// }
+
+// gratestNumber(10, 15)
+
+//Task 4
+
+function conString(str,str1){
+console.log(`Concatenating of two string: ${str} ${str1}`)
 }
 
-gratestNumber(10, 15)
+conString('Ashish', 'Pal')
