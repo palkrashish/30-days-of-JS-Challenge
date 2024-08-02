@@ -51,8 +51,16 @@
 // console.log(result); // False
 
 // Task 7
-function produceValue(num1, num2 = 2) {
-  return num1 * num2;
+// function produceValue(num1, num2 = 2) {
+//   return num1 * num2;
+// }
+// let result = produceValue(5);
+// console.log(`Result of Product value ${result}`);
+
+// Task 8
+
+function greetingMsg(name, age = 19){
+    return console.log(`Welcome ${name} and your age is ${age}, hope youa are doing well `)
 }
-let result = produceValue(5);
-console.log(`Result of Product value ${result}`);
+
+greetingMsg('ashish')
