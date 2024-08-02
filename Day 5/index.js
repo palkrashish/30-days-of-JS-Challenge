@@ -11,8 +11,19 @@
 
 // Task 2
 
-function squareNumber(number) {
-  return number * number;
+// function squareNumber(number) {
+//   return number * number;
+// }
+// let result = squareNumber(5);
+// console.log(`Square  of  number is: ${result} `);
+
+// Task 3
+function gratestNumber(num, num1) {
+  if (num >= num1) {
+    console.log(`${num} is greater than ${num1}.`);
+  } else {
+    console.log(`${num1} is greater than ${num}.`);
+  }
 }
-let result = squareNumber(5);
-console.log(`Square  of  number is: ${result} `);
+
+gratestNumber(10, 15)
