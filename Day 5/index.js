@@ -38,9 +38,14 @@
 
 // Task 5
 
-const calculateSum = (num1, num2) => num1 + num2;
+// const calculateSum = (num1, num2) => num1 + num2;
 
+// let result = calculateSum(3, 4);
 
-let result = calculateSum(3, 4);
+// console.log(`Sum of two number ${result}`);
 
-console.log(`Sum of two number ${result}`); 
+// Task 6
+
+const containsCharacter = (str, char) => str.includes(char);
+let result = containsCharacter("Hello, world!", "o");
+console.log(result);
