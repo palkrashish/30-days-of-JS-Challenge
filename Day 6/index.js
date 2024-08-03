@@ -49,8 +49,17 @@
 // console.log("All array sum are: - ", sumAllNumber);
 
 // Task 10
+// const array = [1, 2, 3, 4, 5];
+// for (let index = 0; index < array.length; index++) {
+//   const element = array[index];
+//   console.log(`Element of index '${index}' and number is '${element}'`);
+// }
+
+// Task 11
 const array = [1, 2, 3, 4, 5];
-for (let index = 0; index < array.length; index++) {
-  const element = array[index];
-  console.log(`Element of index '${index}' and number is '${element}'`);
-}
+console.log(`Iterate of each element are:-`);
+
+array.forEach((element) => {
+  console.log(` ${element}`);
+});
+
