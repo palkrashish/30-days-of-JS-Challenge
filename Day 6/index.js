@@ -56,10 +56,16 @@
 // }
 
 // Task 11
-const array = [1, 2, 3, 4, 5];
-console.log(`Iterate of each element are:-`);
+// const array = [1, 2, 3, 4, 5];
+// console.log(`Iterate of each element are:-`);
 
-array.forEach((element) => {
-  console.log(` ${element}`);
-});
+// array.forEach((element) => {
+//   console.log(` ${element}`);
+// });
 
+// Task 12
+const array = [
+  [1, 2, 3],
+  [3, 2, 1],
+];
+console.log(array);
