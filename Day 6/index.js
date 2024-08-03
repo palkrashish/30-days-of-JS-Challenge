@@ -64,8 +64,20 @@
 // });
 
 // Task 12
+// const array = [
+//   [1, 2, 3],
+//   [3, 2, 1],
+// ];
+// console.log(array);
+
+// Task 13
 const array = [
   [1, 2, 3],
-  [3, 2, 1],
+  [4, 5, 6],
 ];
-console.log(array);
+
+const row = 1; // Index of the row (0-based index)
+const col = 2; // Index of the column (0-based index)
+
+const specificElement = array[row][col];
+console.log(`Element at row ${row} and column ${col}:`, specificElement);
