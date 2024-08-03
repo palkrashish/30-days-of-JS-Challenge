@@ -33,7 +33,12 @@
 // console.log(array); // [ 0, 1, 2, 3, 4, 5 ]
 
 // Task 7
+// const array = [1, 2, 3, 4, 5];
+// array.map((e) => {
+//   console.log(e * 2);
+// });
+
+// Task 8
 const array = [1, 2, 3, 4, 5];
-array.map((e) => {
-  console.log(e * 2);
-});
+const result = array.filter((num) => num % 2 === 0);
+console.log(result);
