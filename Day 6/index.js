@@ -1,4 +1,4 @@
- // Task 1
+// Task 1
 // const array = [1, 2, 3, 4, 5];
 // console.log(array)
 
@@ -16,13 +16,18 @@
 // array.push(6);
 // console.log(array); // [1,2,3,4,5,6]
 
-
 // Task 4
 // const array = [1, 2, 3, 4, 5];
 // array.pop()
 // console.log(array)  //[1, 2, 3, 4]
 
 // Task 5
-const array = [1, 2, 3, 4, 5];
+// const array = [1, 2, 3, 4, 5];
 // array.shift();
-console.log(array); // [2,3,4,5]
+// console.log(array); // [2,3,4,5]
+
+// Task 6
+
+const array = [1, 2, 3, 4, 5];
+array.unshift(0);
+console.log(array); // [ 0, 1, 2, 3, 4, 5 ]
