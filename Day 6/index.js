@@ -39,6 +39,11 @@
 // });
 
 // Task 8
+// const array = [1, 2, 3, 4, 5];
+// const result = array.filter((num) => num % 2 === 0);
+// console.log(result);
+
+// Task 9
 const array = [1, 2, 3, 4, 5];
-const result = array.filter((num) => num % 2 === 0);
-console.log(result);
+const sumAllNumber = array.reduce((acc, curr) => acc + curr);
+console.log("All array sum are: - ", sumAllNumber);
