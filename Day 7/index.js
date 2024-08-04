@@ -119,16 +119,36 @@
 // Task 8
 
 // Define the book object
-let book = {
-  title: "To Kill a Mockingbird",
-  author: "Harper Lee",
-  year: 1960,
-};
+// let book = {
+//   title: "To Kill a Mockingbird",
+//   author: "Harper Lee",
+//   year: 1960,
+// };
 
-// Iterate over the properties of the book object using for...in loop
-console.log("Iterating over properties of the book object:");
-for (let property in book) {
-  if (book.hasOwnProperty(property)) {
-    console.log(property + ": " + book[property]);
-  }
-}
+// // Iterate over the properties of the book object using for...in loop
+// console.log("Iterating over properties of the book object:");
+// for (let property in book) {
+//   if (book.hasOwnProperty(property)) {
+//     console.log(property + ": " + book[property]);
+//   }
+// }
+
+
+// Task 9
+
+// Define the book object
+let book = {
+    title: "To Kill a Mockingbird",
+    author: "Harper Lee",
+    year: 1960,
+  };
+  
+  // Get all keys of the book object and log them
+  console.log("Keys of the book object:");
+  let keys = Object.keys(book);
+  console.log(keys);
+  
+  // Get all values of the book object and log them
+  console.log("\nValues of the book object:");
+  let values = Object.values(book);
+  console.log(values);
