@@ -19,12 +19,28 @@
 
 // Task 3
 
+// const bookName = {
+//   title: "You do not know JS",
+//   author: "Kyle",
+//   year: 2024,
+//   bookInformation: function () {
+//     return this.title + " Author " + this.author;
+//   },
+// };
+// console.log(bookName.bookInformation());
+
+// Task 4
 const bookName = {
-  title: "You do not know JS",
-  author: "Kyle",
-  year: 2024,
-  bookInformation: function () {
-    return this.title + " Author " + this.author;
-  },
-};
-console.log(bookName.bookInformation());
+    title: "You do not know JS",
+    author: "Kyle",
+    year: 2024,
+    bookInformation: function () {
+      return this.title + " Author " + this.author;
+    },
+    updateYear: function(updateYear){
+        this.year = updateYear
+    }
+  };
+  console.log(bookName);
+  bookName.updateYear(2025)
+  console.log(bookName)
