@@ -99,20 +99,36 @@
 
 // Task 7
 // Define book object constructor with a method
-function Book(title, author, year) {
-  this.title = title;
-  this.author = author;
-  this.year = year;
+// function Book(title, author, year) {
+//   this.title = title;
+//   this.author = author;
+//   this.year = year;
 
-  // Method to get book information
-  this.getBookInfo = function () {
-    return this.title + " (" + this.year + ")";
-  };
+//   // Method to get book information
+//   this.getBookInfo = function () {
+//     return this.title + " (" + this.year + ")";
+//   };
+// }
+
+// // Create a book object
+// let book = new Book("To Kill a Mockingbird", "Harper Lee", 1960);
+
+// // Log the result of calling the getBookInfo method
+// console.log(book.getBookInfo());
+
+// Task 8
+
+// Define the book object
+let book = {
+  title: "To Kill a Mockingbird",
+  author: "Harper Lee",
+  year: 1960,
+};
+
+// Iterate over the properties of the book object using for...in loop
+console.log("Iterating over properties of the book object:");
+for (let property in book) {
+  if (book.hasOwnProperty(property)) {
+    console.log(property + ": " + book[property]);
+  }
 }
-
-// Create a book object
-let book = new Book("To Kill a Mockingbird", "Harper Lee", 1960);
-
-// Log the result of calling the getBookInfo method
-console.log(book.getBookInfo());
-
