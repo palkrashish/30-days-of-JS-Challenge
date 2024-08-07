@@ -13,9 +13,21 @@
 
 // Task 3
 
-let array = [1, 2, 3, 4];
+// let array = [1, 2, 3, 4];
 
-let [first, second] = array;
+// let [first, second] = array;
 
-console.log("First number", first);
-console.log("Second number", second);
+// console.log("First number", first);
+// console.log("Second number", second);
+
+// Task 4
+
+let bookDescription = {
+  name: "Chai aur code",
+  author: "Hitesh Choudhary",
+};
+
+let { name, author } = bookDescription;
+
+console.log("Book Name is", name);
+console.log("Author Name is ", author)
