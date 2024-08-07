@@ -54,9 +54,30 @@
 
 // Task 7
 
-function productDescription (value, value1 = 1){
-    console.log(`Product details one is ${value} and second is ${value1} `)
-}
+// function productDescription (value, value1 = 1){
+//     console.log(`Product details one is ${value} and second is ${value1} `)
+// }
 
-console.log(productDescription('Chair'))
-console.log(productDescription('Chair',1000))
+// console.log(productDescription('Chair'))
+// console.log(productDescription('Chair',1000))
+
+// Task 8
+
+let car = {
+    brand: "Toyota",
+    model: "Corolla",
+    year: 2022,
+    // Method to display the car's details
+    displayDetails() {
+        return `${this.year} ${this.brand} ${this.model}`;
+    },
+    // Method to calculate the age of the car
+    calculateAge(currentYear) {
+        return currentYear - this.year;
+    }
+};
+
+// Logging the object to the console
+console.log(car);
+console.log(car.displayDetails())
+console.log(car.calculateAge(2024))
