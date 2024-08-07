@@ -22,12 +22,20 @@
 
 // Task 4
 
-let bookDescription = {
-  name: "Chai aur code",
-  author: "Hitesh Choudhary",
-};
+// let bookDescription = {
+//   name: "Chai aur code",
+//   author: "Hitesh Choudhary",
+// };
 
-let { name, author } = bookDescription;
+// let { name, author } = bookDescription;
 
-console.log("Book Name is", name);
-console.log("Author Name is ", author)
+// console.log("Book Name is", name);
+// console.log("Author Name is ", author)
+
+// Task 5
+
+let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let array1 = [11, 12, 13, 14, 15, 16];
+
+let resultOfArray = [...array, ...array1]
+console.log('Complete array', resultOfArray)
