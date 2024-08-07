@@ -34,8 +34,20 @@
 
 // Task 5
 
-let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let array1 = [11, 12, 13, 14, 15, 16];
+// let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let array1 = [11, 12, 13, 14, 15, 16];
 
-let resultOfArray = [...array, ...array1]
-console.log('Complete array', resultOfArray)
+// let resultOfArray = [...array, ...array1]
+// console.log('Complete array', resultOfArray)
+
+
+// Task 6
+function additionNumber( ...numbers){
+    let total = 0
+    for(   let number of numbers ){
+        total = total + number
+    }
+    return total
+}
+
+console.log(additionNumber(5,10))
