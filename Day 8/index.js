@@ -63,21 +63,35 @@
 
 // Task 8
 
-let car = {
-    brand: "Toyota",
-    model: "Corolla",
-    year: 2022,
-    // Method to display the car's details
-    displayDetails() {
-        return `${this.year} ${this.brand} ${this.model}`;
-    },
-    // Method to calculate the age of the car
-    calculateAge(currentYear) {
-        return currentYear - this.year;
-    }
+// let car = {
+//     brand: "Toyota",
+//     model: "Corolla",
+//     year: 2022,
+//     // Method to display the car's details
+//     displayDetails() {
+//         return `${this.year} ${this.brand} ${this.model}`;
+//     },
+//     // Method to calculate the age of the car
+//     calculateAge(currentYear) {
+//         return currentYear - this.year;
+//     }
+// };
+
+// // Logging the object to the console
+// console.log(car);
+// console.log(car.displayDetails())
+// console.log(car.calculateAge(2024))
+
+// Task 9
+let propName = "age";
+let propValue = 30;
+
+// Creating an object with computed property names
+let person = {
+    name: "Alice",
+    [propName]: propValue,
+    ["is" + propName.charAt(0).toUpperCase() + propName.slice(1)]: true
 };
 
 // Logging the object to the console
-console.log(car);
-console.log(car.displayDetails())
-console.log(car.calculateAge(2024))
+console.log(person);
