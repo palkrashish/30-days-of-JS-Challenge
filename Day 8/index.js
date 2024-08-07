@@ -42,12 +42,21 @@
 
 
 // Task 6
-function additionNumber( ...numbers){
-    let total = 0
-    for(   let number of numbers ){
-        total = total + number
-    }
-    return total
+// function additionNumber( ...numbers){
+//     let total = 0
+//     for(   let number of numbers ){
+//         total = total + number
+//     }
+//     return total
+// }
+
+// console.log(additionNumber(5,10))
+
+// Task 7
+
+function productDescription (value, value1 = 1){
+    console.log(`Product details one is ${value} and second is ${value1} `)
 }
 
-console.log(additionNumber(5,10))
+console.log(productDescription('Chair'))
+console.log(productDescription('Chair',1000))
