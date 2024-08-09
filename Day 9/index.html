@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+  </head>
+
+  <body>
+    <div id="myElement">Hello I am learning DOM Manipulation</div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let element = document.getElementById("myElement");
+
+        if (element) {
+          element.textContent = "New Text Content";
+        } else {
+          console.error("Element with ID 'myElement' not found.");
+        }
+      });
+    </script>
+  </body>
+</html>
